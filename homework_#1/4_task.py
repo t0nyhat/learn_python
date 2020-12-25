@@ -9,7 +9,8 @@ maximum = 0
 while num > 0:
     if num % 10 > maximum:
         maximum = num % 10
+        if maximum == 9:
+            break
     num = num // 10
+
 print(maximum)
-
-

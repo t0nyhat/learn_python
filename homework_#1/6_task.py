@@ -12,6 +12,6 @@ counter = 0
 day = 1
 
 while b > a:
-    a = a + (a * 0.1)
+    a *= 1.1
     day += 1
 print(day)

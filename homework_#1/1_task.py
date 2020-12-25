@@ -5,10 +5,10 @@
 """
 one = 1
 print(one)
-oneString = 'one'
-print(oneString)
+one_string = 'one'
+print(one_string)
 
-inputString = input('Введите любой текст')
-print(f'Вы ввели {inputString}')
-inputInt = int(input('Введите любимое число'))
-print(f'Квадрат этого числа равен {inputInt*inputInt}')
+input_string = input('Введите любой текст')
+print(f'Вы ввели {input_string}')
+input_int = int(input('Введите любимое число'))
+print(f'Квадрат этого числа равен {input_int * input_int}')

@@ -9,8 +9,10 @@
 gain = int(input('Введите выручку'))
 charge = int(input('Введите издержки'))
 if gain > charge:
-    print(f'Вы работате в прибыль. Рентабельность {(gain-charge) /gain}')
+    print(f'Вы работате в прибыль. Рентабельность {(gain - charge) / gain}')
     emp = int(input('Введите количество сотрудников'))
     print(f'Прибыль на каждого сотрудника {(gain - charge) / emp}')
+elif (gain - charge) == 0:
+    print('Нет прибыли, вы работаете в ноль')
 else:
     print('Вы работате в убыток')
