@@ -7,7 +7,10 @@
 
 def div(first_num, second_num):
     """Возвращает результат делениия"""
-    return first_num / second_num if second_num != 0 else 'На ноль делить нельзя'
+    try:
+        return first_num / second_num
+    except ZeroDivisionError:
+        return 'На ноль делить нельзя'
 
 
 input_numbers = input('Введите 2 числа через пробел: ').split(' ')
