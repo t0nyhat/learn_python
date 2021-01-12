@@ -8,10 +8,7 @@
 from random import randint
 
 list = [randint(0, 300) for el in range(13)]
-new_list = []
-for i in range(1, len(list)):
-    if list[i] > list[i - 1]:
-        new_list.append(list[i])
+new_list = [list[i] for i in range(1, len(list)) if list[i] > list[i - 1]]
 
 print(list)
 print(new_list)
