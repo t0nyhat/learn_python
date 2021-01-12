@@ -6,7 +6,7 @@
 
 from sys import argv
 
-script_name, hours, rate, prize = argv
+_, hours, rate, prize = argv
 
 print("Зарплата: ", (int(hours) * int(rate)) + int(prize))
 
